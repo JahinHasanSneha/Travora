@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', system-ui,'Poppins', sans-serif;
+  background-color: #FBF7EE;
+  background-image: radial-gradient(rgba(15,30,28,0.035) 1px, transparent 1px);
+  background-size: 4px 4px;
+}
+
+/* Signature element: hand-drawn-feel dotted route line used across itinerary connectors, dividers, and nav underlines */
+.route-line {
+  background-image: repeating-linear-gradient(to right, #B0473B 0, #B0473B 6px, transparent 6px, transparent 14px);
+  height: 2px;
+}
+.route-line-vertical {
+  background-image: repeating-linear-gradient(to bottom, #B0473B 0, #B0473B 6px, transparent 6px, transparent 14px);
+  width: 2px;
+}
+
+::selection {
+  background-color: #E0A458;
+  color: #0F1E1C;
+}
+
+/* Visible keyboard focus, respected everywhere */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid #C98A3C;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+}
