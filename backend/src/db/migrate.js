@@ -2,8 +2,7 @@
 //   npm run migrate              -> schema.sql (idempotent base schema) + migrations/*.sql
 //   npm run migrate:incremental  -> ONLY migrations/*.sql (what you want on an existing Neon DB)
 //
-// Migration files are additive + idempotent. Applied files are remembered in
-// `schema_migrations` so they run once; nothing is ever dropped or reset.
+
 const fs = require('fs');
 const path = require('path');
 const { pool } = require('../config/db');
