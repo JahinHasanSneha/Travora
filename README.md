@@ -43,6 +43,7 @@ Travora is a travel booking platform that allows users to explore and book hotel
 
 ---
 
+## GO CHECK OUT: https://youtu.be/GO6WpN8RmZE?si=LM_RYu4W1c-ARAqo
 ## Installation
 
 ### Prerequisites:
